@@ -1,0 +1,17 @@
+.footer{
+    color: #d9d9d9;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding : 60px 20px 30px;
+    margin-top: 50px;
+}
+.footerContent{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr ;
+    gap: 80px;
+}
