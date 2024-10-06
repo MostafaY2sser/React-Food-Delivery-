@@ -5,7 +5,7 @@ import {menu_list} from '../../data/assets'
 // eslint-disable-next-line react/prop-types
 const ExplorMenu = ( {setCategry , categry} ) => {
     return (
-        <div className="explor">
+        <div className="explor"  id="menu">
             <h1>Explor Our Menu</h1>
             <p className="explorText">provides essential nutrients for overall health Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, mollitia!</p>
             <div className="explorList">

@@ -6,7 +6,7 @@
     align-items: center;
     gap: 30px;
     padding : 60px 20px 30px;
-    margin-top: 50px;
+    margin-top: 100px ;
 }
 .footerContent{
     max-width: 1200px;
@@ -14,4 +14,50 @@
     display: grid;
     grid-template-columns: 2fr 1fr 1fr ;
     gap: 80px;
+}
+.footerLeft,
+.footerCenter,
+.footerRight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.footerLeft li,
+.footerCenter li,
+.footerRight li{
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.footerCenter li:hover,
+.footerRight li:hover{
+    color: tomato;
+}
+.footer h2{
+    color: white;
+}
+.footerSocailIcon img{
+    width: 40px;
+    margin-right: 15px;
+}
+.footer hr{
+    width: 100%;
+    max-width: 1200px;
+    height: 2px;
+    border: none;
+    background-color: grey;
+}
+
+
+@media ( max-width: 767px ) {
+    .footerContent{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+    }
+    .footer{
+        margin-top: 70px;
+    }
 }

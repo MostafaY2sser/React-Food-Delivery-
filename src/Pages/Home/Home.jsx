@@ -4,6 +4,7 @@ import ExplorMenu from "../../Components/ExplorMenu/ExplorMenu"
 import Header from "../../Components/Header/Header"
 import { useState } from "react"
 import FoodDisplay from "../../Components/FoodDisplay/FoodDisplay"
+import AppDowload from "../../Components/AppDowload/AppDowload"
 
 const Home = () => {
 
@@ -15,6 +16,7 @@ const Home = () => {
             <Header/>
             <ExplorMenu   categry={categry}  setCategry={setCategry}/>
             <FoodDisplay  categry={categry}/>
+            <AppDowload/>
         </div>
     )
 }

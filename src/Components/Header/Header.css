@@ -32,7 +32,15 @@
     cursor: pointer;
     color: #747474;
     background-color: white;
-    font-size: max(1vw,13px);
-    font-weight: 500;
+    font-size: max(1vw,12px);
+    font-weight: 600;
+    letter-spacing: 1px;
     border-radius: 50px;
+    font-family: sans-serif;
+}
+
+@media ( max-width: 600px ) {
+    .header{
+        margin: 20px auto 0;
+    }
 }

@@ -1,0 +1,26 @@
+
+
+.container{
+    position: fixed;
+    bottom: 20px; 
+    right: 40px; 
+    z-index: 1000; 
+    transform: translateX(200%);
+    transition: .3s;
+}
+.container.showbutton{
+    transform: translateX(0);
+}
+
+.container button{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}

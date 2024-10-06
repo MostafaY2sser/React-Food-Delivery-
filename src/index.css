@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 body{
   font-family: "Outfit", sans-serif;
-  height: 5000px;
 }
+html{
+  scroll-behavior: smooth;
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -15,9 +19,14 @@ ul{
   list-style: none;
 }
 .app{
-    max-width: 1200px;
-    margin:  0 auto;
-    padding: 0 20px ;
+  max-width: 1200px;
+  margin:  0 auto;
+  padding: 0 20px ;
+}
+@media (max-width:480px) {
+  .app{
+    padding: 0 10px ;
+  }
 }
 
 :root{

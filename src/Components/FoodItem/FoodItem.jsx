@@ -1,11 +1,11 @@
 import { useContext } from "react"
 import { assets } from "../../data/assets"
-import "./FootItem.css"
+import "./FoodItem.css"
 import { StoreContext } from "../../Context/StoreContext"
 
 
 // eslint-disable-next-line react/prop-types
-const FootItem = ({ id ,name , image , price , description , category }) => {
+const FootItem = ({ id ,name , image , price , description }) => {
 
 
     const {cartItem , addToCart , remoneFromCart} = useContext(StoreContext)

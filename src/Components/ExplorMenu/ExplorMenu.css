@@ -8,7 +8,7 @@
 .explorText{
     color: #747474;
     padding: 10px 0 20px ;
-    /* max-width: 60%; */
+    max-width: 90%;
 }
 .explorList{
     display: flex;
@@ -41,4 +41,13 @@
 .explor .active{
     border: 4px solid tomato;
     padding: 5px;
+}
+
+@media (max-width: 600px) {
+    .explor{
+        margin-top: 25px;
+    }
+    .explorText{
+        font-size: 15px;
+    }
 }
