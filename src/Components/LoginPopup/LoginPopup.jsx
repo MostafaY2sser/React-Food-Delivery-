@@ -1,17 +1,11 @@
-
 import { useState } from "react"
 import "./LoginPopup.css"
 import { assets } from "../../data/assets"
 
-
 // eslint-disable-next-line react/prop-types
 const LoginPopup = ( {setshowPopup  } ) => {
 
-
-
     const [ currentstate , setcurrentstate ] = useState("login")
-
-
 
     return (
         <div className="loginPupup">
@@ -36,8 +30,12 @@ const LoginPopup = ( {setshowPopup  } ) => {
                 </div>
                 {
                     currentstate === "login" 
-                    ? <p className="change">Create a new account? <span  onClick={()=> setcurrentstate("Sin Up")} >Click here</span></p>
-                    : <p className="change">Already have an account! <span  onClick={()=> setcurrentstate("login")} >Click here</span></p>
+                    ? <p className="change">Create a new account? 
+                        <span  onClick={()=> setcurrentstate("Sin Up")} >Click here</span>
+                    </p>
+                    : <p className="change">Already have an account! 
+                        <span  onClick={()=> setcurrentstate("login")} >Click here</span>
+                    </p>
                 }
             </form>
         </div>

@@ -48,8 +48,6 @@
     border: none;
     background-color: grey;
 }
-
-
 @media ( max-width: 767px ) {
     .footerContent{
         display: flex;

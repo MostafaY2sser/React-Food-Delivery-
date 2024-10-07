@@ -1,0 +1,38 @@
+.order{
+    display: flex;
+    justify-content: space-between;
+    gap: max(20vw , 50px);
+    margin-top: 50px;
+}
+.orderLeft{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.multiInput{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.multiInput input{
+    width: 50%;
+}
+.order input{
+    padding: 6px 5px ;
+    outline: none;
+    border: none;
+    border: 1px solid #c2bfbf;
+    border-radius: 4px;
+}
+.orderRight{
+    flex: 1;
+}
+.orderRight button{
+    margin-top: 20px;
+}
+@media (max-width:700px) {
+    .order{
+        flex-direction: column;
+    }
+}

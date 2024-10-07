@@ -3,15 +3,11 @@ import "./FoodDisplay.css"
 import { StoreContext } from "../../Context/StoreContext";
 import FoodItem from "../FoodItem/FoodItem";
 
-
-
 // eslint-disable-next-line react/prop-types
 const FoodDisplay = ( {categry} ) => {
 
-
     const { food_list } = useContext(StoreContext);
-
-
+    
     return (
         <div >
             <div className="FoodDisplay">
@@ -19,14 +15,20 @@ const FoodDisplay = ( {categry} ) => {
                 <div className="foodDisplayList">
                     {
                         food_list.map( (item , index ) =>{
-                            if( categry === "all"  || categry === item.category ){
-                                return <FoodItem  key={index}  id={item._id} name={item.name}  image={item.image} price={item.price} description={item.description} category={item.category}/>
+                            if( categry === "all" || categry===item.category ){
+                                return <FoodItem  
+                                key={index}  
+                                id={item._id} 
+                                name={item.name}  
+                                image={item.image} 
+                                price={item.price} 
+                                description={item.description} 
+                                category={item.category}/>
                             }
                         })
                     }
                 </div>
             </div>
-        
         </div>
     )
 }

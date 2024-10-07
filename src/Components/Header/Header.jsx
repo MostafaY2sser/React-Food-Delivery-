@@ -9,8 +9,10 @@ const Header = () => {
             <img src={assets.header_img} alt="" />
             <div className="header-contents">
                 <h2>Order Your Favourite Food Here</h2>
-                <p>Choose From dicta  invent consectetur adipisicing elitExpeditalaboriosam inventore dicta at ut eius tempora animi, maxime corporis, nisi blanditiis ea. Minima ratione ipsam qui doloribus quod eos?</p>
-                <button>Veiw Menu</button>
+                <p>Choose From dicta  invent consectetur adipisicing 
+                    elitExpeditalaboriosam inventore dicta at ut eius tempora animi, maxime corporis,
+                    nisi blanditiis ea. Minima ratione ipsam qui doloribus quod eos?</p>
+                <a href="#menu">Veiw Menu</a>
             </div>
         </div>
     )

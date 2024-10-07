@@ -26,7 +26,7 @@
     font-size: 1vw;
     animation: fadein 3s;
 }
-.header-contents button{
+.header-contents a{
     border: none;
     padding: 1vw 2.3vw;
     cursor: pointer;
@@ -38,7 +38,6 @@
     border-radius: 50px;
     font-family: sans-serif;
 }
-
 @media ( max-width: 600px ) {
     .header{
         margin: 20px auto 0;
